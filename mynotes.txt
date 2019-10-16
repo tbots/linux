@@ -1,0 +1,6 @@
+bash:
+$? - выполнение последние операции, как прошло, если 0, то все ок, если 1 то н
+ ps xawf -eo pid,user,cgroup,args
+
+vim
+ $MYVIMRC
