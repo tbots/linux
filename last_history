@@ -1,0 +1,590 @@
+exit
+cd ../devops/
+cd notebooks/
+cd -
+cd notes
+ls
+cd note
+ls
+pwd
+ls -l
+cd docker
+ls
+pwd
+cd examples/
+ls -t
+cd php/
+ls
+cd php-apache/
+ls
+vi Dockerfile 
+exit
+id -nG
+vi devops/docker
+cd
+cd -
+cd devops/docker
+ls
+ls -l
+cd note
+cd examples/
+ls -l
+cd REST/
+ls -l
+vi nginx/
+cat docker-compose.yml 
+cat docker-compose.yml 
+ls -l
+cd nginx/
+ls -l
+cat nginx.Dockerfile 
+s
+cd ~
+exit
+ls -l
+exit
+ls -l
+ls
+echo $LS_COLORS 
+exit
+ls
+echo $TERM 
+exit
+id -nG
+tmux new -s docker -n redis -c ~/docs 
+vi ~/.tmux.conf 
+tmux att
+tmux new -s docker -n redis -c ~/docs 
+vi ~/.tmux.conf 
+tmux new -s docker -n redis -c ~/docs 
+export TERM=screen-256color
+echo $TERM
+tmux new -s docker -n redis -c ~/docs 
+tmux -2 new -s docker -n redis -c ~/docs 
+unset TERM 
+vi ~/.bashrc
+tmux new -s docker -n redis -c ~/docs 
+vi ~/.tmux.conf 
+export TERM=screen-256color
+grep TERM  ~./bashrc
+grep TERM  ~/.bashrc
+grep TERM  ~/.bashrc -A2
+exit
+history
+history | xrandr
+history | grep xrandr
+history | grep gamma
+randr --output DP1 --gamma 1:1:1 --brightness 1.0
+xrandr --output DP1 --gamma 1:1:1 --brightness 1.0
+xrandr --output DP1 --gamma 1:1:1 --brightness 1.2
+xrandr --output DP1 --gamma 1:1:1 --brightness 1.6
+xrandr --output DP1 --gamma 1:1:1 --brightness 1.0
+xrandr --output DP1 --gamma 1:1:1 --brightness 1.2
+xrandr --output DP1 --gamma 1:1:1 --brightness 1.0
+xrandr --output DP1 --gamma 0.8:0.8:0.8 --brightness 1.0
+xrandr --output DP1 --gamma 0.8:0.8:0.8 --brightness 1.2
+xrandr --output DP1 --gamma 0.8:0.8:0.8 --brightness 1.1
+members docker
+sudo apt install members
+members docker
+id -nG
+newgrp docker
+exit
+echo $TERM
+exit
+echo $TERM
+. ~/.bash
+. ~/.bashrc 
+cd docs/devops/docker
+ls
+mkdir prj; mv examples/php/ prj
+clear
+ls
+cd prj/
+ls
+cd ..
+ls -l
+cd prj/php/
+ls
+vi docker-compose.yml 
+ls
+cat README 
+cd php-apache/
+ls
+cat Dockerfile 
+cd ..
+mcv ../examples/REST/ .
+v ../examples/REST/ .
+mv ../examples/REST/ .
+ls
+cd REST/
+ls
+cat README 
+cd nginx/
+ls
+cat nginx.Dockerfile 
+ls -l
+clear
+ls -l
+ls
+cat nginx.Dockerfile 
+echo $$
+docker image build --help
+docker image build --help | more
+docker image build --file nginx.Dockerfile 
+docker image build --file nginx.Dockerfile .
+id -G
+id -G -n
+exit
+cd
+echo $$
+. ~/.bashrc
+cd docs/devops/docker
+ls
+cd notes
+ls
+vi cmdlist 
+exit
+echo $TERM
+tmux new -s docker
+vi ~/.tmux.conf 
+tmux new -s docker
+exit
+exit
+cd ~/linux
+ls
+git status
+cat file
+rm file
+clear
+ls -l
+cat backup 
+rm backup
+clear
+ls -l
+cat domashka 
+vi domashka 
+cat file.c 
+cat file2.c 
+rm file2.c
+clear
+ls -
+ls -l
+cat mynotes.txt v
+cat mynotes.txt 
+rm mynotes.txt
+clera
+clear
+ls -l
+cat plan.txt 
+rm plan.txt
+clear
+ls -l
+cat notes 
+rm notes
+rm pseudo 
+cat README.md 
+cat shell/
+ ls shell/
+cat shell/source.sh 
+set -x
+vi shell/source.sh 
+bash shell/source.sh 
+bash shell/source.sh 
+bash shell/source.sh 
+clear
+clear
+set -x
+clear
+clear
+exit
+ls
+vi vim/
+cd vim/
+ls
+vi notes 
+source ~/.bashrc 
+cd plan/
+vi hacking 
+exit
+whatis addgroup
+man man
+addgroup --help
+. ~/.bashrc
+cd
+cd docs/devops/docker
+ls
+cd notes/
+clear
+ls -l
+vi cmdlist 
+eexit
+exit
+cd ../../../examples/
+ls
+mkdir NGINX
+cd NGINX
+docker images --help
+docker images 
+docker images --all
+docker rmi --help
+docker rmi 5a9
+docker history 5a9
+ls -l
+docker history --help
+docker history 5a9 --no-trunc 
+vim <(docker history 5a9 --no-trunc )
+docker history --help
+docker history 5a9 --no-trunc --human=false 
+vim --help | more
+vim <(docker history 5a9 --no-trunc --human=false) -c 'set wrap'
+vim <(docker history 5a9 --no-trunc --human=false) -c 'set nowrap'
+ls
+ls -
+ls -l
+docker rmi 5a9
+docker rmi 5a9 --force
+docker rmi --force 5a9 
+docker images 
+docker ps -a
+docker images remove --force 
+docker image remove --help
+docker image remove --force nginx:latest
+docker images 
+docker image build --file nginx.Dockerfile .
+mkdir dockerhub; cd dockerhub
+ls
+cd ..
+vi README
+docker run -dn webserver nginx:latest
+docker run -d -n webserver nginx:latest
+docker run -d --name webserver nginx:latest
+docker ps
+docker history --help
+vim <(docker history webserver --no-trunc --human=false) -c 'set nowrap'
+docker history webserver --no-trunc --human=false
+docker ps
+docker ps -a
+docker images 
+docker history --no-trunc --human=false webserver
+docker history --no-trunc --human=false nginx:latest
+vim -c 'set nowrap' <(docker history --no-trunc --human=false nginx:latest)
+vim -c 'set nowrap' <(docker history --no-trunc --human=false nginx)
+vim -c 'set nowrap' <(docker history --no-trunc --human=false nginx:first)
+docker ps
+docker ps --help
+docker ps -n
+docker ps --last
+docker ps --last 1
+docker stop  --help
+docker stop 5ac
+docker ps --last 1
+docker rm --help
+docker rm $(docker ps -n1)
+docker rm $(docker ps -n 1
+docker rm $(docker ps -n 1)
+docker rm $(docker ps -n 1) | grep g
+docker rm $(docker ps --last 1)
+docker ps --last 1
+docker ps --last 1 -q
+docker rm $(docker ps --last 1 -q)
+docker images 
+docker run -d --name webserver nginx:first 
+docker ps --last 1 -q
+docker ps --last 1 
+docker ps --last 1 --no-trunc 
+ls -l
+ls
+cat README 
+cd ../../
+cd notes/
+ls
+vi docker-compose 
+exit
+. ~/.bashrc
+ls
+cd prj
+cd php/
+ls
+cd ../REST/
+ls
+ls -l
+cat README 
+cd nginx/
+ls
+ls -l
+id -nG 
+id -G 
+clear
+ls
+ls -l
+cat nginx.Dockerfile 
+docker images
+docker build --help | more
+docker build --tag nginx:first_
+docker build --tag nginx:first_ -f nginx.Dockerfile
+docker build --tag nginx:first -f nginx.Dockerfile
+docker build --tag nginx:first -f nginx.Dockerfile . --verbose
+docker build --tag nginx:first -f nginx.Dockerfile . -vvv
+docker build --tag nginx:first -f nginx.Dockerfile . | tee file
+docker images
+docker build --tag nginx:first -f nginx.Dockerfile
+docker build --tag nginx:first -f nginx.Dockerfile .
+ls -l
+cat nginx.Dockerfile 
+cat file 
+rm file
+ls
+ls code/
+head code/basic.html 
+ls conf.d/
+vi conf.d/site.conf 
+ls -l ../
+vi ../docker-compose.yml 
+cat -n ../docker-compose.yml 
+docker-compose up 
+ls -l $( whereis -b docker-compose | awk '{print $2}')
+sudo chown root:docker $( whereis -b docker-compose | awk '{print $2}')
+ls -l $( whereis -b docker-compose | awk '{print $2}')
+docker-compose up 
+sudo chmod g+x $( whereis -b docker-compose | awk '{print $2}')
+docker-compose up 
+vi ../docker-compose.yml 
+docker-compose up 
+cd ..
+ls -l
+cat docker-compose.yml 
+vi docker-compose.yml
+docker-compose up 
+vi ../docker-compose.yml 
+vi docker-compose.yml 
+docker-compose up 
+vi docker-compose.yml 
+docker-compose up 
+vi docker-compose.yml 
+docker-compose up 
+vi docker-compose.yml 
+docker-compose up 
+vi docker-compose.yml 
+docker-compose up 
+ls -l
+cat docker-compose.yml 
+docker-compose --version
+exit
+cd ../
+ls
+vi README 
+cd
+find . -type f hacking
+find . -type f -name hacking
+vi ~/docs/plan/hacking 
+clear
+vi ~/docs/plan/hacking 
+docker ps -a -n1
+docker ps -a -n1 
+docker-compose ls
+docker-compose top
+docker 
+docker run --help | grep Usage
+docker ps -a -n1 
+docker start rest_web_1 
+docker ps -a -n1 
+docker start rest_web_1 
+echo $?
+docker ps -a -n1 
+docker images
+docker ps -a -n1 -q
+docker rm --force $(docker ps -a -n1 -q)
+echo $?
+docker ps -a -n1 -q
+docker ps -a -n1 
+docker images
+docker ps -a
+docker rm --force $(docker ps -a -n1 -q)
+clear
+docker ps -a
+docker ps 
+docker ps -a
+docker images
+docker rmi --force e50 
+docker images
+docker-compose up --help | head
+docker-compose up --help 
+cd docker
+cd -
+cd -
+cd -
+ls -l
+cat docker-compose.yml 
+docker-compose up -d --verbose
+docker ps -a
+docker run --detach --rm --name nginx_test nginx:composed 
+echo $?
+docker ps -a
+docker-compose ps
+docker-compose up
+exit
+tmux new -s docker -c docs/devops/docker -n php
+tmux new -s planning -c docs -n hacking
+vi docs/plan/hacking 
+exit
+vi plan 
+exit
+exit
+exit
+exit
+exit
+tmux
+cd /etc/profile.d/
+ls
+sudo vi /etc/profile
+vi ~/.profile 
+tmux
+exit
+vi ~/script.sh
+vi ~/script.sh
+bash ~/script.sh
+vi ~/.bashrc 
+find . -type f -maxdepth 1 -name '.bash*'
+find . -typef -maxdepth 1 -name '.bash*'
+find . -type "f" -maxdepth 1 -name '.bash*'
+find . -type f -maxdepth 1 -name '.bash*'
+find . -type 'f' -maxdepth 1 -name '.bash*'
+find . -maxdepth 1 -type fd -name '.bash*'
+find . -maxdepth 1 -type f -name '.bash*'
+cd; find . -maxdepth 1 -type f -name '.bash*'
+vi ~/.bash_profile 
+. ~/.bash_profile
+exit
+cd ~/docs/plan/
+vi hacking 
+rm .hacking.swp 
+vi hacking 
+exit
+cd ed/vim/
+ls
+grep split -r *
+vi 
+grep split -r *
+vi old 
+clear
+ls -l
+vi examples 
+vi notes
+exit
+cd doc
+echo $CDPATH
+cd docs
+cd devops/d
+cd devops/ls
+cd devops/
+pwd
+ls -l
+cd docker
+ls -l
+ls -l examples/
+cd pr
+cd prj/
+ls -l
+cd REST/
+ls -l
+vi docker-compose.yml 
+exit
+cd ~/docs/shell/bash/
+ls
+vi note 
+vi note 
+exit
+ls
+LS -L
+ls -l
+tmux new -s docker -c docs/devops/docker -n php
+exit
+ls --help | head
+ls --help | head -n1
+ls
+ls --all 
+ls --all /etc
+ls --all /etc /home
+ls --all --reverse /etc /home
+for list do echo $list; done
+echo $?
+for list ; do echo $list; done
+echo $?
+for list in; do echo $list; done
+echo $?
+for list in for filll
+ls
+ls 
+for file in files; do echo $file; done
+for file in files docs notes commands; do echo $file; done
+clear
+ls
+ls -l
+vi names
+cat names
+grep fish names 
+who am i
+who ami?
+which whoami
+file which whoami
+file /usr/bin/whoami 
+mv /usr/bin/whoami  ~
+sudo mv /usr/bin/whoami  ~
+whoami
+env
+env | grep NAME
+env | grep USE
+env | more
+cat names 
+echo $USER
+sudo mv ~/whoami /usr/bin/
+whoami
+grep `whoami` names 
+grep $(whoami)  names 
+export USER=denis
+whoami
+echo $USER
+grep $(echo $USER) names
+echo $USER
+grep denis names
+whoami
+grep $(whoami) names 
+cat names
+echo $USER
+cat names 
+USER=sasha
+echo $USER
+grep $( echo $USER) names 
+unset USER
+grep $( echo $USER) names #-> grep  names 
+.
+${.}
+ls -l .
+for file in .; do echo $file; done  
+*
+for file in *; do echo $file; done  
+for file in *.sh; do echo $file; done  
+touch file1.c file2.c
+for file in *.sh *.c; do echo $file; done  
+
+whereis whoami -b
+echo $PATH
+echo $PATH | sed 's/:/\n/'
+echo $PATH | sed 's/:/\n/g'
+for dir in $(echo $PATH | sed 's/:/\n/g'); do echo "dir: $dir"; done
+for dir in $(echo $PATH | sed 's/:/\n/g'); do ls $dir/whoami; done
+sudo for dir in $(echo $PATH | sed 's/:/\n/g'); do ls $dir/whoami; doneR
+which whoami
+sudo for dir in $(echo $PATH | sed 's/:/\n/g'); do test $dir/whoami && echo $dir/whoami; done
+sudo for dir in $(echo $PATH | sed 's/:/\n/g'); do test -x $dir/whoami &&  echo $dir/whoami; done
+sudo for dir in $(echo $PATH | sed 's/:/\n/g'); do echo $dir; done
+for dir in $(echo $PATH | sed 's/:/\n/g'); do test -x $dir/whoami &&  echo $dir/whoami; done
+history
+for dir in $(echo $PATH | sed 's/:/\n/g'); do echo "dir: $dir"; done
+for dir in $(echo $PATH | sed 's/:/\n/g'); do test -x $dir/whoami &&  echo $dir/whoami; done
+sudo mv /usr/bin/whoami /sbin/
+for dir in $(echo $PATH | sed 's/:/\n/g'); do test -x $dir/whoami &&  echo $dir/whoami; done
+which whoami
+history
+history -w ~/linux/last_history

@@ -6,9 +6,11 @@
  4. Find if it is enabled on boot? 
  5. Disable and re-enable it again.
  
+ 
 [SHELL]
 
- + Environment:
+                                      Environment
+
  1. What is my username?
  2. What is my home directory?
  3. Can I reset it to another directory?

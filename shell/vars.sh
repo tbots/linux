@@ -1,6 +1,6 @@
 #!/bin/bash
 
 alpha='A B  C   D'
-echo '$alpha'
-echo "$alpha"
-echo $alpha
+echo '$alpha'     # $alpha
+echo "$alpha"     # A B  C   D
+echo $alpha       # A B C D
