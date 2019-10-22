@@ -1,12 +1,14 @@
 
+[ADMINISTRATION]
  1. Find out which the startup system used? (systemd? SysV? upstart?)
  2. Find if ssh is installed on the system?  (ssh)
  3. Find where it is located?   (sshd or sshd.service)
  4. Find if it is enabled on boot? 
  5. Disable and re-enable it again.
  
+[SHELL]
 
-Environment:
+ + Environment:
  1. What is my username?
  2. What is my home directory?
  3. Can I reset it to another directory?
@@ -20,3 +22,8 @@ Environment:
   new terminal    which file?
   run script   ./script    which file?
   
+
+get first three letters of the word
+
+$ echo "hello" | ? 
+hel
