@@ -11,21 +11,55 @@
 
 # ./parse_passwd -l -c 
 # fish   /home/fish
+function get_field()
+{
+  grep "^$USER" /etc/passwd | cut -d: -f $field 
+}
+
 while [ -n "$1" ]
 do 
-  echo $@
-  echo "variable: $1"
+  #echo $@
+  #echo "variable: $1"
   if [ "$1" == '-l' ]
   then
     echo -n "Login name: "
-    grep "^$USER" /etc/passwd | cut -d: -f1 
+    field=1
+    get_field
   elif [ "$1" == '-x' ]
   then
     echo -n "Encrypted password: "
-    grep "^$USER" /etc/passwd | cut -d: -f2 
+    field=2
+    get_field
+  elif [ "$1" == '-uid' ]
+  then
+    echo -n "Numerical user ID: "
+    field=3
+    get_field
+  elif [ "$1" == '-gid' ]
+  then
+    echo -n "Numerical group ID: "
+    field=4
+    get_field
+  elif [ "$1" == '-c' ]
+  then
+    echo -n "User name or comment field: "
+    field=5
+    get_field
+  elif [ "$1" == '-d' ]
+  then
+    echo -n "User home directory "
+    field=2
+    get_field
+  elif [ "$1" == '-uid' ]
+  then
+    echo -n "Numerical user ID: "
+    field=3
+    get_field
   else
     echo "option cannot be recognized"  
     exit 1
   fi
   shift 1
 done  
+
+
