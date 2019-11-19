@@ -1,5 +1,4 @@
-#!/bin/bash
-
+#!/bin/bash 
 
 # login name       -l
 # optional encrypted password     -x
@@ -11,6 +10,9 @@
 
 # ./parse_passwd -l -c 
 # fish   /home/fish
+
+
+
 function get_field()
 {
   grep "^$USER" /etc/passwd | cut -d: -f $field 
@@ -48,15 +50,26 @@ do
   elif [ "$1" == '-d' ]
   then
     echo -n "User home directory "
-    field=2
+    field=6
     get_field
-  elif [ "$1" == '-uid' ]
+  elif [ "$1" == '-i' ]
   then
-    echo -n "Numerical user ID: "
-    field=3
+  echo -n "Optional user command interpreter: "
+    field=7
     get_field
   else
     echo "option cannot be recognized"  
+    echo "Usage: $0 OPTION... "
+    echo "Display specific fields from /etc/passwd"
+    echo "" 
+    echo "  -l       login name
+    echo "  -x     optional encrypted password
+    echo "  -uid                numerical user
+    echo "  -gid               numerical group
+    echo "  -c    user name or comment field
+    echo "  -d           user home directory
+    echo "  -i optional user command interpreter
+    
     exit 1
   fi
   shift 1
