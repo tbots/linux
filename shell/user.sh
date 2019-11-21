@@ -54,7 +54,7 @@ do
     get_field
   elif [ "$1" == '-i' ]
   then
-  echo -n "Optional user command interpreter: "
+    echo -n "Optional user command interpreter: "
     field=7
     get_field
   else
@@ -62,17 +62,15 @@ do
     echo "Usage: $0 OPTION... "
     echo "Display specific fields from /etc/passwd"
     echo "" 
-    echo "  -l       login name
-    echo "  -x     optional encrypted password
-    echo "  -uid                numerical user
-    echo "  -gid               numerical group
-    echo "  -c    user name or comment field
-    echo "  -d           user home directory
-    echo "  -i optional user command interpreter
+    echo "  -l       login name"
+    echo "  -x     optional encrypted password"
+    echo "  -uid                numerical user"
+    echo "  -gid               numerical group"
+    echo "  -c    user name or comment field"
+    echo "  -d           user home directory"
+    echo "  -i optional user command interpreter"
     
     exit 1
   fi
   shift 1
 done  
-
-
