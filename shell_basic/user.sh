@@ -11,12 +11,31 @@
 # ./parse_passwd -l -c 
 # fish   /home/fish
 
+function usage()
+{
 
+ echo "Usage: $(basename $0) OPTION..."
+ echo "Print out specified fields from /etc/passwd for a current user"
+ echo ""
+ echo "Mandatory arguments to long options are mandatory for short options too."
+ echo "  -l           login name"
+ echo "  -x           optional encrypted password"
+ echo "  -uid         numerical user"
+ echo "  -gid         numerical group"
+ echo "  -c           user name or comment field"
+ echo "  -d           user home directory"
+ echo "  -i           optional user command interpreter"
+ exit 0
+}
 
 function get_field()
 {
   grep "^$USER" /etc/passwd | cut -d: -f $field 
 }
+
+
+# Print usage on no arguments
+test "$1" || usage
 
 while [ -n "$1" ]
 do 

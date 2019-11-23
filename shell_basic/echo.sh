@@ -16,7 +16,7 @@ echo ${str}  #abc
 #  "str" with an argument "=abcd"
 #
 # str= abcd
-#  If the space left behind a whitespace, shell will set enviornment
+#  If the space left behind a equal sign, shell will set enviornment
 #  varible "str" to empty value and run command "abcd" 
 
 
